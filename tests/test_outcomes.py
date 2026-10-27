@@ -63,7 +63,7 @@ def test_upsell_unknown_when_analysis_was_cut_short():
 def _bucket(**kw) -> dashboard.Bucket:
     base = {
         "period": "all", "conversations": 10, "analysed_conversations": 10,
-        "solo_analysed_conversations": 10, "upsell_rate": 0.7, "attempts": 12, "acceptance_rate": 0.5,
+        "solo_analysed_conversations": 10, "upsell_rate": 0.7, "attempts": 12, "acceptance_rate": 0.5, "answered_offers": 10,
         "avg_effort": 7.0, "greeting_rate": 0.9, "unanswered_questions": 0, "pushy_conversations": 0,
         "avg_customer_frustration": 2.0, "attempts_per_conversation": 1.2, "techniques": ["bundle", "upgrade", "cross_sell"],
     }  # fmt: skip

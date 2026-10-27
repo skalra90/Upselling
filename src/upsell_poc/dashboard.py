@@ -48,6 +48,7 @@ class Bucket(BaseModel):
     upsell_rate: float | None = None
     attempts: int = 0
     accepted: int = 0
+    answered_offers: int = 0  # offers the customer clearly accepted or turned down (the base of acceptance_rate)
     acceptance_rate: float | None = None
     avg_effort: float | None = None
     greeted: int = 0
@@ -347,6 +348,7 @@ class _Acc:
             upsell_rate=ratio(self.with_upsell, self.analysed),
             attempts=self.attempts,
             accepted=self.accepted,
+            answered_offers=self.decided,
             acceptance_rate=ratio(self.accepted, self.decided),
             avg_effort=mean(self.efforts),
             greeted=self.greeted,
@@ -369,7 +371,12 @@ class _Acc:
         )
 
 
-MIN_CONVERSATIONS = 3  # below this, say so rather than judge someone on a couple of calls
+# Below this, say so rather than judge someone on a couple of calls. It counts conversations where the person was the
+# only salesperson: those are the ones greeting, listening, pressure and mood are measured on, so they are what a
+# rating stands on. Conversations shared with a colleague do not count toward it.
+MIN_CONVERSATIONS = 3
+MIN_ANSWERED_OFFERS = 3  # "customers say yes" is only judged once this many offers got a clear answer
+SEVERE_FRUSTRATION = 7  # one customer this frustrated keeps the rating from being "Excelling"
 
 
 def _pct(v: float | None) -> str:
@@ -390,7 +397,7 @@ def _customer_trend(series: list[Bucket]) -> Trend | None:
     the mirror image; anything else (mixed, or small moves) is 'steady'. How often someone upsells, or how
     often customers say yes to an offer, does not move the arrow.
     """
-    enough = [b for b in series if b.analysed_conversations >= MIN_CONVERSATIONS]
+    enough = [b for b in series if b.solo_analysed_conversations >= MIN_CONVERSATIONS]
     if len(enough) < 2:
         return None
     prev, cur = enough[-2], enough[-1]
@@ -530,7 +537,7 @@ def assess(t: Bucket, series: list[Bucket]) -> Assessment:
                 f"Rarely offers an add-on ({_pct(t.upsell_rate)} of conversations) - suggest something relevant once the customer's own request is handled."
             )
     # conversion (no answered offers = nothing to judge, not a free point)
-    if t.acceptance_rate is not None:
+    if t.acceptance_rate is not None and t.answered_offers >= MIN_ANSWERED_OFFERS:
         available += W_CONVERSION
         if t.acceptance_rate >= 0.4:
             points += W_CONVERSION
@@ -545,16 +552,22 @@ def assess(t: Bucket, series: list[Bucket]) -> Assessment:
         upsell_tips.append("Uses a single sales technique - mix in bundles, upgrades or protection plans.")
     strengths = handling_good + sales_good
 
-    low_sample = n < MIN_CONVERSATIONS
+    low_sample = d < MIN_CONVERSATIONS
     insufficient = low_sample or available == 0
     rating: Rating
     if available == 0:
         rating = "solid"  # nothing to judge; insufficient_data is what tells the reader so
     else:
         rating = "strong" if points * 4 >= available * 3 else "solid" if points * 2 >= available else "needs_work"
-    if insufficient:
+        worst_seen = t.max_customer_frustration
+        if rating == "strong" and worst_seen is not None and worst_seen >= SEVERE_FRUSTRATION:
+            rating = "solid"  # an average can hide one customer who left very upset
+    if insufficient and n == 0:
+        headline = f"Not enough analysed data to rate this person yet (0 of {MIN_CONVERSATIONS} conversations analysed)."
+    elif insufficient:
         headline = (
-            f"Not enough analysed data to rate this person yet ({n} of {MIN_CONVERSATIONS} conversations analysed)."
+            f"Not enough conversations to rate this person yet ({d} of {MIN_CONVERSATIONS} where they were the only "
+            f"salesperson)."
         )
     else:
         headline = {
@@ -592,10 +605,12 @@ def assess(t: Bucket, series: list[Bucket]) -> Assessment:
         summary = f"{label}: " + ", ".join(bits) + "."
     trend = _customer_trend(series)
     if low_sample:
-        if n:
+        if d:
             improvements.append(
-                f"Only {n} analysed conversation{'s' if n != 1 else ''} so far - treat this as a first impression."
+                f"Only {d} conversation{'s' if d != 1 else ''} with a single salesperson so far - treat this as a first impression."
             )
+        elif n:
+            improvements.append("Every analysed conversation so far was shared with a colleague, so customer handling can't be judged yet.")
         else:
             improvements.append(f"None of the {t.conversations} conversation(s) could be analysed yet.")
     return Assessment(

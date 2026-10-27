@@ -110,3 +110,30 @@ def test_default_storage_is_sample_data(monkeypatch):
     monkeypatch.delenv("LOCAL_STORAGE_DIR", raising=False)
     s = Settings(_env_file=None)
     assert s.local_storage_dir.parts[-2:] == ("sample_data", "store")
+
+
+def test_public_transcript_also_strips_the_nested_provider_and_model():
+    stored = {
+        "transcript": {"duration": 5, "segments": [], "provider": "openai:gpt-4o-transcribe-diarize", "model": "gpt-4o-transcribe-diarize", "chunks": 1},
+        "roles": {"x": 1},
+        "acoustics": [],
+    }
+    out = public.public_transcript(stored)
+    assert out == {"transcript": {"duration": 5, "segments": [], "chunks": 1}}
+
+
+def test_public_status_hides_the_internal_storage_path():
+    status = JobStatus(job_id="a", status="queued", filename="x.wav", input_key="jobs/a/input/x.wav", created_at="t", updated_at="t")
+    assert "input_key" not in public.public_status(status)
+
+
+def test_public_status_replaces_crash_text_with_plain_words():
+    def err(text):
+        st = JobStatus(job_id="a", status="failed", filename="x", input_key="k", created_at="t", updated_at="t", error=text)
+        return public.public_status(st)["error"]
+
+    assert err("AudioError: ffmpeg failed: Error opening input file /tmp/upsell-poc/x/a.mp3") == public.AUDIO_ERROR
+    assert err("AuthenticationError: Incorrect API key provided: sk-proj-****abcd") == public.FAILED_ERROR
+    assert "sk-" not in err("openai.RateLimitError: quota sk-live")
+    friendly = "This was interrupted when the app restarted. Press Try again."
+    assert err(friendly) == friendly  # our own plain messages are kept

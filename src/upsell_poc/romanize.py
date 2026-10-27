@@ -63,7 +63,7 @@ def _load() -> dict[str, str]:
 def _save(lookup: dict[str, str]) -> None:
     try:
         LOOKUP_FILE.parent.mkdir(parents=True, exist_ok=True)
-        tmp = LOOKUP_FILE.with_suffix(LOOKUP_FILE.suffix + ".tmp")  # write then replace: a reader never sees half a file
+        tmp = LOOKUP_FILE.with_suffix(LOOKUP_FILE.suffix + ".tmp")  # write, then replace: no half-written file
         tmp.write_text(json.dumps(dict(sorted(lookup.items())), ensure_ascii=False, indent=0) + "\n", "utf-8")
         tmp.replace(LOOKUP_FILE)
     except OSError:
@@ -95,7 +95,7 @@ def ensure_words(words: set[str], chain: Any) -> dict[str, str]:
                     step="romanize", system=SYSTEM, user="Words:\n" + "\n".join(batch), schema=WordMap
                 )
             except Exception:  # noqa: BLE001 - spelling a word must never fail a finished analysis
-                log.warning("could not spell %d Hindi words in English letters; leaving them", len(batch), exc_info=True)
+                log.warning("could not spell %d Hindi words; leaving them", len(batch), exc_info=True)
                 continue
             for pair in result.items:
                 if pair.word in batch and pair.hinglish.strip():

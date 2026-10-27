@@ -26,7 +26,11 @@ function App() {
     );
   }
 
-  if (location.pathname === "/login" || location.pathname === "/signup") return <Navigate to="/" replace />;
+  if (location.pathname === "/login" || location.pathname === "/signup") {
+    // Back to the page they were trying to open before being sent to log in.
+    const from = (location.state as { from?: string } | null)?.from;
+    return <Navigate to={from && from !== "/login" && from !== "/signup" ? from : "/"} replace />;
+  }
 
   return (
     <div className="shell">

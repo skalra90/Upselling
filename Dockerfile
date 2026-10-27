@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1.7
 # One image, two roles:
 #   API:    default CMD (uvicorn)
 #   Worker: command override `python -m upsell_poc.worker`
@@ -16,16 +15,13 @@ ENV UV_COMPILE_BYTECODE=1 \
 
 WORKDIR /app
 
-# Dependencies first (cached layer), project code second.
-RUN --mount=type=cache,id=s/4750c0ed-f53e-4d73-a7b0-03882a4a6d01-/root/.cache/uv,target=/root/.cache/uv \
-    --mount=type=bind,source=uv.lock,target=uv.lock \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv sync --frozen --no-dev --no-install-project
-
+# Dependencies first (their own layer, so a code-only change does not reinstall them), project code second.
+# Plain COPY/RUN only - no BuildKit cache or bind mounts - so every builder (Docker, Railway, Render) accepts it.
 COPY pyproject.toml uv.lock ./
+RUN uv sync --frozen --no-dev --no-install-project
+
 COPY src ./src
-RUN --mount=type=cache,id=s/4750c0ed-f53e-4d73-a7b0-03882a4a6d01-/root/.cache/uv,target=/root/.cache/uv \
-    uv sync --frozen --no-dev --no-editable
+RUN uv sync --frozen --no-dev --no-editable
 
 # ---------- runtime ----------
 FROM python:${PYTHON_VERSION}-slim-bookworm AS runtime

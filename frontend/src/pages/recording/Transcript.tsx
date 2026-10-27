@@ -143,7 +143,7 @@ export default function TranscriptTab({
   return (
     <div className="card">
       <div className="row">
-        <select className="sel" style={{ maxWidth: "100%" }} value={convId} onChange={(e) => setConvId(e.target.value)}>
+        <select className="sel" style={{ maxWidth: "100%" }} aria-label="Show one conversation" value={convId} onChange={(e) => setConvId(e.target.value)}>
           <option value="">All conversations</option>
           {convs.map((c) => (
             <option key={c.conversation_id} value={c.conversation_id}>
@@ -151,7 +151,7 @@ export default function TranscriptTab({
             </option>
           ))}
         </select>
-        <select className="sel" value={kind} onChange={(e) => setKind(e.target.value)}>
+        <select className="sel" aria-label="Show only certain lines" value={kind} onChange={(e) => setKind(e.target.value)}>
           <option value="">All lines</option>
           <option value="upsell">Upsell attempts</option>
           <option value="frustrated">Frustration</option>

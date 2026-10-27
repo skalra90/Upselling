@@ -334,13 +334,14 @@ def test_unanalysed_conversations_do_not_dilute_rates_or_earn_points(tmp_path):
 
 def test_assess_scores_only_categories_with_data():
     base = {"period": "p", "conversations": 5, "analysed_conversations": 5}
-    # no answered offers = no free point; no solo conversations = no pushy/listening points
+    # no solo conversations = nothing about how they treat customers to judge, so no rating (never upselling alone)
     sparse = dashboard.assess(dashboard.Bucket(**base, upsell_rate=0.0), [])
-    assert sparse.rating == "needs_work" and not sparse.insufficient_data
+    assert sparse.insufficient_data and sparse.low_sample
     assert not any("Answers what customers ask" in s for s in sparse.strengths)
 
     full = dashboard.Bucket(
-        **base, solo_analysed_conversations=5, greeting_rate=1.0, upsell_rate=0.8, acceptance_rate=0.5
+        **base, solo_analysed_conversations=5, greeting_rate=1.0, upsell_rate=0.8, acceptance_rate=0.5,
+        answered_offers=6,
     )
     assert dashboard.assess(full, []).rating == "strong"  # every available point, not a share of a fixed total
 
@@ -485,6 +486,7 @@ def test_advice_puts_customer_handling_first_and_upselling_last_as_optional_tips
         greeting_rate=1.0,
         upsell_rate=0.5,
         acceptance_rate=0.1,
+        answered_offers=8,
         attempts=8,
         techniques=["bundle"],
         pushy_conversations=3,
@@ -534,3 +536,47 @@ def test_unanswered_question_advice_uses_the_right_singular_and_plural():
 
     assert advice(1, 2).startswith("1 customer question went unanswered across 2 conversations")
     assert advice(3, 4).startswith("3 customer questions went unanswered")
+
+
+def _solo(**kw) -> dashboard.Bucket:
+    base = {
+        "period": "p", "conversations": 3, "analysed_conversations": 3, "solo_analysed_conversations": 3,
+        "greeting_rate": 1.0, "unanswered_questions": 0, "pushy_conversations": 0,
+        "avg_customer_frustration": 0.0, "max_customer_frustration": 0.0,
+    }  # fmt: skip
+    return dashboard.Bucket(**{**base, **kw})
+
+
+def test_a_rating_needs_three_conversations_with_a_single_salesperson():
+    # 3 analysed conversations, but only one of them is the person's alone: not enough to judge how they treat customers
+    one_alone = dashboard.assess(_solo(solo_analysed_conversations=1), [])
+    assert one_alone.insufficient_data and "1 of 3" in one_alone.headline
+    assert any("single salesperson" in line for line in one_alone.improvements)
+    # all shared with a colleague: never rated, and never from upselling alone
+    shared = dashboard.assess(
+        _solo(solo_analysed_conversations=0, greeting_rate=None, avg_customer_frustration=None, max_customer_frustration=None,
+              upsell_rate=1.0, attempts=3, acceptance_rate=0.5, answered_offers=3),
+        [],
+    )  # fmt: skip
+    assert shared.insufficient_data and any("shared with a colleague" in line for line in shared.improvements)
+    assert not dashboard.assess(_solo(), []).insufficient_data
+
+
+def test_one_very_upset_customer_keeps_a_good_average_from_being_excelling():
+    calm = dashboard.assess(_solo(upsell_rate=0.8), [])
+    assert calm.rating == "strong"
+    # same average-looking numbers, but one customer left very frustrated
+    upset = dashboard.assess(_solo(upsell_rate=0.8, avg_customer_frustration=2.7, max_customer_frustration=8.0), [])
+    assert upset.rating == "solid" and any("very frustrated" in line for line in upset.improvements)
+    # a mildly irritated customer does not trigger the cap
+    assert dashboard.assess(_solo(upsell_rate=0.8, max_customer_frustration=6.0), []).rating == "strong"
+
+
+def test_a_declined_offer_does_not_lower_the_rating_until_there_are_enough_answers():
+    none = dashboard.assess(_solo(upsell_rate=0.0), [])
+    one_no = dashboard.assess(_solo(upsell_rate=0.7, attempts=1, acceptance_rate=0.0, answered_offers=1), [])
+    assert none.rating == one_no.rating == "strong"  # trying once and hearing "no" is not worse than never trying
+    assert not any("accepted" in tip for tip in one_no.upsell_tips)
+    # with enough answers the yes-rate does count
+    many_no = dashboard.assess(_solo(upsell_rate=0.7, attempts=5, acceptance_rate=0.0, answered_offers=5), [])
+    assert any("accepted" in tip for tip in many_no.upsell_tips)
