@@ -1,0 +1,242 @@
+[
+ {
+  "id": "seg_0",
+  "end": 2.54,
+  "speaker": "A",
+  "start": 0.34,
+  "text": " اهلا وسهلا تفضلوا كيف",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_1",
+  "end": 3.79,
+  "speaker": "@",
+  "start": 2.54,
+  "text": " استطيع مساعدتك؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_2",
+  "end": 11.290000000000001,
+  "speaker": "B",
+  "start": 3.79,
+  "text": " السلام عليكم ابغى جوال جديد عندي ميزانية الفين ريال ما",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_3",
+  "end": 21.59,
+  "speaker": "A",
+  "start": 12.190000000000001,
+  "text": " لدي جالكسي آي فاختوفونسين والف تسعمائة ريال وبالمناسبة تيم غماو جراب وحماية شاشة بمائة ريال",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_4",
+  "end": 24.99,
+  "speaker": "B",
+  "start": 23.79,
+  "text": " ابغى اضافات",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_5",
+  "end": 26.810000000000002,
+  "speaker": "B",
+  "start": 25.46,
+  "text": " بس الجوال",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_6",
+  "end": 30.36,
+  "speaker": "C",
+  "start": 27.810000000000002,
+  "text": " اهلا اختي، كيف اخدمك؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_7",
+  "end": 37.260000000000005,
+  "speaker": "D",
+  "start": 31.310000000000002,
+  "text": " I want to return this tablet as shashafeeha khat washtareetha qabil thalatha ayam.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_8",
+  "end": 48.16,
+  "speaker": "C",
+  "start": 38.010000000000005,
+  "text": " اعتذر جدا، نبذل لك فورا، واذا تبغين عندنا ضمان حماية الاجهزة بثلاثمائة ريال في السنة.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_9",
+  "end": 50.11,
+  "speaker": "D",
+  "start": 48.760000000000005,
+  "text": " Akeed abgha,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_10",
+  "end": 51.81,
+  "speaker": "D",
+  "start": 50.510000000000005,
+  "text": " khususon badi li sar.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_11",
+  "end": 54.586,
+  "speaker": "D",
+  "start": 52.436,
+  "text": " Thank you; you are very kind.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_12",
+  "end": 56.936,
+  "speaker": "A",
+  "start": 55.986,
+  "text": " TAFADDAL,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_13",
+  "end": 59.536,
+  "speaker": "A",
+  "start": 57.086,
+  "text": " ABOO SULTAN; WISH TAHHTAJ.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_14",
+  "end": 64.786,
+  "speaker": "D",
+  "start": 60.936,
+  "text": " Abgha iPhone; al Ah'dath; Kam sa'arah?",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_15",
+  "end": 67.486,
+  "speaker": "A",
+  "start": 65.686,
+  "text": " iPhone seventeen pro,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_16",
+  "end": 70.086,
+  "speaker": "A",
+  "start": 67.936,
+  "text": " bi khamsat alaaf wa thamaniyat riyal.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_17",
+  "end": 74.386,
+  "speaker": "A",
+  "start": 70.886,
+  "text": " nigdar nqasstah ala ithne ashar shahar bedoon fawa'ed.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_18",
+  "end": 76.586,
+  "speaker": "D",
+  "start": 75.186,
+  "text": " Tayyib; akhto.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_19",
+  "end": 79.14,
+  "speaker": "E",
+  "start": 77.14,
+  "text": " وأبغى الشاحن اللاسلكي معه",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_20",
+  "end": 87.64,
+  "speaker": "B",
+  "start": 80.69,
+  "text": " ممتاز الشاحن بمئة وتسعين ريال المجموع ستمائة وتسعة و ثمانين ريال",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_21",
+  "end": 89.09,
+  "speaker": "D",
+  "start": 88.34,
+  "text": " Excuse me,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_22",
+  "end": 91.78999999999999,
+  "speaker": "D",
+  "start": 89.74,
+  "text": " and comes some ma'at air pods,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_23",
+  "end": 93.78999999999999,
+  "speaker": "D",
+  "start": 92.28999999999999,
+  "text": " haddi'ah li ukhti.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_24",
+  "end": 101.94,
+  "speaker": "C",
+  "start": 94.49,
+  "text": " أكيد عندنا AirPods Pro بتسعمية وتسعين ريال وعليها تغليف هدية مجاني",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_25",
+  "end": 105.64,
+  "speaker": "E",
+  "start": 102.89,
+  "text": " حلو خديها بالبطاقة",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_26",
+  "end": 111.49,
+  "speaker": "C",
+  "start": 106.39,
+  "text": " حم شكراً لكِ وكل عام وأنتِ بخير",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_27",
+  "end": 117.44,
+  "speaker": "B",
+  "start": 112.58999999999999,
+  "text": " طيب، خلاص، أخذ الجوال بس وين الكاشير؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_28",
+  "end": 121.53999999999999,
+  "speaker": "B",
+  "start": 118.53999999999999,
+  "text": " هناك على يمينك، تفضل",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_29",
+  "end": 123.24,
+  "speaker": "B",
+  "start": 122.09,
+  "text": " have a great day",
+  "type": "transcript.text.segment"
+ }
+]

@@ -1,0 +1,80 @@
+[
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "مساء الخير، أهلاً فيك في Oud Palace. تدورين على شي معين؟"
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "مساء النور. أبغى عطر هدية لزوجي، عيد ميلاده الأسبوع الجاي."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "الله يبارك له. وش يحب؟ ريحة خشبية ولا فرنسية خفيفة؟"
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "هو يحب العود، بس مو قوي مرة."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "عندي Royal Oud، عود كمبودي مع لمسة ورد، ويجي بمئتين وثمانين ريال لمئة ملل."
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "Can I smell it? الله، ريحته حلوة."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "Exactly. والحين لو تبغين هدية متكاملة، نقدر نضيف دهن عود ثلاث مل مع علبة هدية فاخرة، بس بمئة وعشرين ريال زيادة."
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "هم... كم يصير المجموع؟"
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "أربعمئة ريال بالتمام، وعليه تغليف مجاني باسمه."
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "ممتاز، خلاص أخذها. اسمه عبدالرحمن."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "تم. بتدفعين كاش ولا بطاقة؟"
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "بطاقة. Thank you so much, you were really helpful!"
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "العفو حبيبتي، وكل عام وهو بخير."
+ }
+]

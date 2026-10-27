@@ -1,0 +1,116 @@
+[
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "أهلاً وسهلاً، تفضلوا. How can I help you?"
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "السلام عليكم. أبغى جوال جديد، عندي ميزانية ألفين ريال."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "عندي Galaxy A56 بألف وتسعمئة ريال. وبالمناسبة، تبغى معه جراب وحماية شاشة بمئة ريال؟"
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "ما أبغى إضافات، بس الجوال."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "أهلاً أختي، كيف أخدمك؟"
+ },
+ {
+  "speaker": "Sara",
+  "role": "customer",
+  "voice": "shimmer",
+  "text": "I want to return this tablet. الشاشة فيها خط، واشتريتها قبل ثلاثة أيام."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "أعتذر جداً. نبدلها لك فوراً. وإذا تبغين، عندنا ضمان حماية الأجهزة بثلاثمئة ريال في السنة."
+ },
+ {
+  "speaker": "Sara",
+  "role": "customer",
+  "voice": "shimmer",
+  "text": "أكيد أبغى، خصوصاً بعد اللي صار. Thank you, you are very kind."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "تفضل أبو سلطان، وش تحتاج؟"
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "أبغى آيفون، الأحدث. كم سعره؟"
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "iPhone 17 Pro بخمسة آلاف وثمانمئة ريال. نقدر نقسطه على اثني عشر شهر بدون فوائد."
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "طيب، أخذه. وأبغى الشاحن اللاسلكي معه."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "ممتاز، الشاحن بمئة وتسعين ريال. المجموع ستة آلاف وتسعة وثمانين ريال."
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "Excuse me, عندكم سماعات AirPods؟ هدية لأختي."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "أكيد، عندنا AirPods Pro بتسعمئة وتسعين ريال. وعليها تغليف هدية مجاني."
+ },
+ {
+  "speaker": "Lama",
+  "role": "customer",
+  "voice": "nova",
+  "text": "حلو، خذيها. بالبطاقة."
+ },
+ {
+  "speaker": "Noura",
+  "role": "salesperson",
+  "voice": "coral",
+  "text": "تم. شكراً لك، وكل عام وأنتِ بخير."
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "طيب، خلاص أخذ الجوال بس. وين الكاشير؟"
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "هناك على يمينك، تفضل. Have a great day!"
+ }
+]

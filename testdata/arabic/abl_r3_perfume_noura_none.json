@@ -1,0 +1,162 @@
+[
+ {
+  "id": "seg_0",
+  "end": 6.6000000000000005,
+  "speaker": "A",
+  "start": 0.0,
+  "text": " مساك بالخير أهلا فيك في أود بالاس دورين على شي معين؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_1",
+  "end": 12.600000000000001,
+  "speaker": "B",
+  "start": 7.150000000000001,
+  "text": " مساء النور أبغى عطر هدية لزوجي عيد ميلاده الأسبوع الجاي هو",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_2",
+  "end": 19.700000000000003,
+  "speaker": "A",
+  "start": 12.600000000000001,
+  "text": " الله يبارك له وشي حب ريحة خشبية ولا فرنسية خفيفة",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_3",
+  "end": 23.350000000000005,
+  "speaker": "B",
+  "start": 20.550000000000004,
+  "text": " يحب العود بس مو قوي مرة",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_4",
+  "end": 33.808,
+  "speaker": "A",
+  "start": 24.558,
+  "text": " Candy Royal Oud عود كمبودي مع لمسة ورد ويجي بـ 280 ريال لـ 100 ملن",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_5",
+  "end": 35.658,
+  "speaker": "B",
+  "start": 34.507999999999996,
+  "text": " Can I smell it?",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_6",
+  "end": 36.507999999999996,
+  "speaker": "B",
+  "start": 36.108,
+  "text": " Allah!",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_7",
+  "end": 37.908,
+  "speaker": "B",
+  "start": 36.858,
+  "text": " ريحته حلوة!",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_8",
+  "end": 50.058,
+  "speaker": "A",
+  "start": 38.608,
+  "text": " Exactly والحين لو تبغين هدية متكاملة نقدر نضيف دهن عود 3 مل مع علبة هدية صافة بس بـ 120 ريال زيادة",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_9",
+  "end": 51.308,
+  "speaker": "B",
+  "start": 50.908,
+  "text": " Ham,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_10",
+  "end": 53.757999999999996,
+  "speaker": "B",
+  "start": 52.308,
+  "text": " kam yaseer al majmoo?",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_11",
+  "end": 61.358,
+  "speaker": "A",
+  "start": 55.708,
+  "text": " arba'a mi'a riyal bittamam wa'alayhi taghleef majjani bismih",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_12",
+  "end": 63.108,
+  "speaker": "B",
+  "start": 62.608,
+  "text": " Mumtaz,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_13",
+  "end": 64.858,
+  "speaker": "B",
+  "start": 63.608,
+  "text": " khalas akhadhna.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_14",
+  "end": 66.958,
+  "speaker": "B",
+  "start": 65.408,
+  "text": " Ismo Abdulrahman.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_15",
+  "end": 71.55799999999999,
+  "speaker": "A",
+  "start": 68.208,
+  "text": " tamm bitetfahin cash wala bitaqa",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_16",
+  "end": 73.30799999999999,
+  "speaker": "B",
+  "start": 72.708,
+  "text": " Bitaka,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_17",
+  "end": 74.708,
+  "speaker": "B",
+  "start": 73.508,
+  "text": " thank you so much.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_18",
+  "end": 76.05799999999999,
+  "speaker": "B",
+  "start": 75.108,
+  "text": " You were really helpful.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_19",
+  "end": 81.438,
+  "speaker": "A",
+  "start": 76.988,
+  "text": " أنا أخوك حبيبتي، وكل عام وهو بخير.",
+  "type": "transcript.text.segment"
+ }
+]

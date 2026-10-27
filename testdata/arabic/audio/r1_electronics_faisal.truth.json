@@ -1,0 +1,122 @@
+[
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "السلام عليكم، أهلاً وسهلاً في المتجر. كيف أقدر أخدمك؟"
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "وعليكم السلام. أبغى تلفزيون جديد للصالة، يعني حوالي خمسة وخمسين بوصة."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "ممتاز. عندنا Samsung Crystal UHD بسعر ألفين وتسعمئة ريال، وعليه عرض هالأسبوع."
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "طيب، وش الفرق بينه وبين الـ QLED؟"
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "The QLED has better brightness and colours, بس سعره أعلى، حوالي ثلاثة آلاف وتسعمئة ريال."
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "لا، الأول يكفيني. الميزانية عندي ثلاثة آلاف بالكثير."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "تمام. بالمناسبة، عندنا كفالة ممتدة سنتين إضافيتين بس بمئتين وخمسين ريال، وتغطي الشاشة كاملة. تبغى أضيفها؟"
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "هم، وش اللي تغطيه بالضبط؟"
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "أي عطل مصنعي، and also free home installation and wall mounting."
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "طيب حلو. أضفها. وكم السعر الإجمالي؟"
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "ألفين وتسعمئة زائد مئتين وخمسين، المجموع ثلاثة آلاف ومئة وخمسين ريال شامل الضريبة."
+ },
+ {
+  "speaker": "Abdullah",
+  "role": "customer",
+  "voice": "ash",
+  "text": "تمام، خذها بالبطاقة. شكراً لك."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "العفو، تشرفنا. Have a great day!"
+ },
+ {
+  "speaker": "Sara",
+  "role": "customer",
+  "voice": "shimmer",
+  "text": "السلام عليكم. My phone charger stopped working، اشتريته من عندكم قبل أسبوعين."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "أهلاً. أكيد نستبدله لك. معك الفاتورة؟"
+ },
+ {
+  "speaker": "Sara",
+  "role": "customer",
+  "voice": "shimmer",
+  "text": "Yes, here it is. بس الصراحة أنا متضايقة، هذا ثالث شاحن يخرب."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "أعتذر منك. خذي هذا الشاحن الجديد، وأنصحك بشاحن Anker الأصلي، سعره تسعة وتسعون ريال وأقوى بكثير."
+ },
+ {
+  "speaker": "Sara",
+  "role": "customer",
+  "voice": "shimmer",
+  "text": "لا شكراً، أنا بس أبغى أستبدل. ما أبغى أشتري شي ثاني."
+ },
+ {
+  "speaker": "Faisal",
+  "role": "salesperson",
+  "voice": "onyx",
+  "text": "تمام، ما في مشكلة. تفضلي الشاحن الجديد، ونتمنى لك يوم سعيد."
+ },
+ {
+  "speaker": "Sara",
+  "role": "customer",
+  "voice": "shimmer",
+  "text": "شكراً."
+ }
+]

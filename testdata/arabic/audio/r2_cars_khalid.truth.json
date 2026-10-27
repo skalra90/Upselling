@@ -1,0 +1,104 @@
+[
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "أهلاً أهلاً أبو فهد! Welcome to Al-Dosari Motors. تبغى سيارة عائلية؟"
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "أهلاً. إي، أدور على SUV، الحين عندي سيدان وصغيرة على العيال."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "عندي Toyota Land Cruiser موديل ألفين وستة وعشرين، بثلاثمئة وعشرين ألف ريال."
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "مرة غالية. ما عندي هالميزانية. أقصى شي مئتين ألف."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "طيب، عندنا Highlander بمئتين وخمسة وعشرين ألف، ونقدر نقسطها. كم تبغى دفعة أولى؟"
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "ما أبغى تقسيط، أبغى كاش، بس أول أشوف السيارة."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "أكيد، تفضل. And this one has the panoramic roof, leather seats, everything."
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "حلوة. وش المحرك؟"
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "ثلاثة ونص لتر V6. بالمناسبة، ما تبغى تضيف حزمة الحماية الكاملة؟ بخمسة عشر ألف ريال، الحين بس."
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "لا، ما أبغاها."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "طيب بس فكر، السيارة الجديدة لازم تنحمى. الحماية الذهبية فيها ضمان الطلاء والزجاج."
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "قلت لا، شكراً."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "يا أخي بتندم! أغلب زبائننا يأخذونها. على الأقل خذ التأمين الشامل من عندنا؟"
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "أنا قلت لك ما أبغى! أبغى بس أعرف السعر النهائي."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "طيب طيب، آسف. السعر النهائي مئتين وخمسة وعشرين ألف ريال."
+ },
+ {
+  "speaker": "Mansour",
+  "role": "customer",
+  "voice": "fable",
+  "text": "I need to think about it. بكلمك بعدين."
+ },
+ {
+  "speaker": "Khalid",
+  "role": "salesperson",
+  "voice": "echo",
+  "text": "تمام، تفضل كرتي."
+ }
+]

@@ -1,0 +1,234 @@
+[
+ {
+  "id": "seg_0",
+  "end": 6.344,
+  "speaker": "A",
+  "start": 0.244,
+  "text": " السلام عليكم أهلا وسهلا في المتجر كيف أقدر أخدمك ممتاز",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_1",
+  "end": 14.744000000000002,
+  "speaker": "B",
+  "start": 6.344,
+  "text": " وعليكم السلام أبغى تلفزيون جديد للصالة يعني حوالي 55 بوصة",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_2",
+  "end": 24.694000000000003,
+  "speaker": "A",
+  "start": 16.744000000000003,
+  "text": " عندنا سامسونج كريستل يو اتش دي بسعر ألفين وتسعمائة ريال وعليه عرض هالأسبوع",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_3",
+  "end": 30.942,
+  "speaker": "B",
+  "start": 26.542,
+  "text": " ايب وش الفرق بينه وبين الكيولاد؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_4",
+  "end": 33.542,
+  "speaker": "A",
+  "start": 31.442,
+  "text": " The QLED has better brightness and colors,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_5",
+  "end": 34.842,
+  "speaker": "A",
+  "start": 33.942,
+  "text": " but it's also more expensive,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_6",
+  "end": 37.792,
+  "speaker": "A",
+  "start": 35.342,
+  "text": " around ثلاثة آلاف وتسعمائة ريال.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_7",
+  "end": 45.842,
+  "speaker": "B",
+  "start": 40.342,
+  "text": " لا الاول يكفيني الميزانية عندي ثلاثة الاف بالكثير",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_8",
+  "end": 56.757999999999996,
+  "speaker": "A",
+  "start": 46.808,
+  "text": " تمام بالمناسبة عندنا كفالة ممتدة سنتين اضافيتين بس بمئتين وخمسين ريال وتغطي الشاشة كاملة تبغى تضيفها؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_9",
+  "end": 60.958,
+  "speaker": "B",
+  "start": 57.257999999999996,
+  "text": " حم؟ ويش اللي تغطيه بالضبط؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_10",
+  "end": 67.908,
+  "speaker": "A",
+  "start": 61.908,
+  "text": " أي عطل مصنعي and also free home installation and wall mounting",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_11",
+  "end": 71.908,
+  "speaker": "B",
+  "start": 70.05799999999999,
+  "text": " طيب حلو أضفها",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_12",
+  "end": 74.468,
+  "speaker": "B",
+  "start": 72.468,
+  "text": " وكان السارع الإجمالي.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_13",
+  "end": 84.31800000000001,
+  "speaker": "A",
+  "start": 75.768,
+  "text": " الفين وتسعمية زائد مئتين وخمسين .. المجموعة ثلاثة آلاف ومئة وخمسين ريال شاملة الضريبة ..",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_14",
+  "end": 88.36800000000001,
+  "speaker": "B",
+  "start": 84.86800000000001,
+  "text": " تمام .. خذها بالبطاقة .. شكراً لك.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_15",
+  "end": 93.11800000000001,
+  "speaker": "A",
+  "start": 89.31800000000001,
+  "text": " العفو .. تشرفنا .. Have a great day ..",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_16",
+  "end": 97.268,
+  "speaker": "C",
+  "start": 93.61800000000001,
+  "text": " Assalamu Alaikum.\" My phone charger stopped working.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_17",
+  "end": 100.57600000000001,
+  "speaker": "C",
+  "start": 97.876,
+  "text": " Ishtaraytu min andkum kabla asbu'ayn.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_18",
+  "end": 106.07600000000001,
+  "speaker": "A",
+  "start": 101.376,
+  "text": " أهلا أكيد نستبدله لك معك الفاتورة؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_19",
+  "end": 108.07600000000001,
+  "speaker": "D",
+  "start": 107.676,
+  "text": " Yes,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_20",
+  "end": 109.126,
+  "speaker": "D",
+  "start": 108.476,
+  "text": " here it is.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_21",
+  "end": 110.226,
+  "speaker": "D",
+  "start": 109.926,
+  "text": " Bass,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_22",
+  "end": 111.676,
+  "speaker": "D",
+  "start": 110.32600000000001,
+  "text": " is saraaha ana m'daaika.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_23",
+  "end": 114.126,
+  "speaker": "D",
+  "start": 112.376,
+  "text": " Hatha thalith shahin yakhrab.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_24",
+  "end": 121.82600000000001,
+  "speaker": "A",
+  "start": 114.82600000000001,
+  "text": " أعتذر منك خذي هذا الشاحن الجديد وأنصحك بشاحن أنك الرأصلي",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_25",
+  "end": 127.694,
+  "speaker": "A",
+  "start": 122.644,
+  "text": " سعره تسعة وتسعون ريال وأقوى بكثير",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_26",
+  "end": 134.394,
+  "speaker": "C",
+  "start": 129.044,
+  "text": " لا شكرا، أنا بس أبغى أستبدل ما أبغى أشتري شيء ثاني",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_27",
+  "end": 142.19400000000002,
+  "speaker": "A",
+  "start": 135.44400000000002,
+  "text": " تمام، ما في مشكلة تفضل الشاحن الجديد ونتمنى لك يوم سعيد",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_28",
+  "end": 143.44400000000002,
+  "speaker": "C",
+  "start": 142.844,
+  "text": " شكرا",
+  "type": "transcript.text.segment"
+ }
+]

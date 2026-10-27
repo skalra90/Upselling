@@ -1,0 +1,162 @@
+[
+ {
+  "id": "seg_0",
+  "end": 6.6,
+  "speaker": "A",
+  "start": 0.0,
+  "text": " أهلاً أهلاً أبو سهد، مرحباً بكم في دوساري موتورز، هل تريد سيارة عائلية؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_1",
+  "end": 14.100000000000001,
+  "speaker": "A",
+  "start": 8.05,
+  "text": " أهلاً، إي أدوّر على SV، الحين عندي سيدان وصغيرة على العيال",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_2",
+  "end": 23.700000000000003,
+  "speaker": "A",
+  "start": 14.850000000000001,
+  "text": " عندي تويوتا لاند كروزر موديل 2026 بثلاثمائة وعشرين ألف ريال مرّة غالية",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_3",
+  "end": 28.567999999999998,
+  "speaker": "A",
+  "start": 24.468,
+  "text": " ما عندي هالمزانية. أقصى شي 200 ألف.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_4",
+  "end": 35.918,
+  "speaker": "A",
+  "start": 29.768,
+  "text": " طيب عندنا هاي لاندير ب 225 ألف ونقدر نقصتها.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_5",
+  "end": 37.968,
+  "speaker": "A",
+  "start": 36.318,
+  "text": " كم تبغى دفع أولى؟",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_6",
+  "end": 43.468,
+  "speaker": "A",
+  "start": 38.368,
+  "text": " ما أبغى تقسيط أبغى كاش بس أول أشوف السيارة.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_7",
+  "end": 45.86800000000001,
+  "speaker": "A",
+  "start": 44.818000000000005,
+  "text": " أكيد تفضل.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_8",
+  "end": 48.36800000000001,
+  "speaker": "A",
+  "start": 46.36800000000001,
+  "text": " and this one has the panoramic roof,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_9",
+  "end": 49.468,
+  "speaker": "A",
+  "start": 48.818000000000005,
+  "text": " leather seats,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_10",
+  "end": 50.318000000000005,
+  "speaker": "A",
+  "start": 49.968,
+  "text": " everything.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_11",
+  "end": 76.934,
+  "speaker": "A",
+  "start": 51.384,
+  "text": " حلوة وش المحرك ثلاثة ونص لتر V6 بالمناسبة ما تبغى تضيف حزمة الحماية الكاملة بخمسة عشر ألف ريال الحين بس لا ما أبغاها طيب بس فكر السيارة جديدة لازم تنحمل الحماية الذهبية فيها ضمان الطلاء والزجاج",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_12",
+  "end": 79.62,
+  "speaker": "A",
+  "start": 77.62,
+  "text": " كلنا شكرا",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_13",
+  "end": 89.07000000000001,
+  "speaker": "A",
+  "start": 80.77000000000001,
+  "text": " يا أخي بتندم أغلب زبائننا يأخذونها على الأقل خذ التأمين الشامل من عندنا طيب",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_14",
+  "end": 94.77000000000001,
+  "speaker": "B",
+  "start": 89.07000000000001,
+  "text": " أنا قلت لك ما أبغى أبغى بس أعرف السعر النهائي",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_15",
+  "end": 101.57000000000001,
+  "speaker": "A",
+  "start": 96.22,
+  "text": " طيب آسف السعر النهائي 225 ألف ريال",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_16",
+  "end": 103.928,
+  "speaker": "B",
+  "start": 102.378,
+  "text": " I need to think about it.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_17",
+  "end": 105.77799999999999,
+  "speaker": "B",
+  "start": 104.57799999999999,
+  "text": " Bekken mek badein.",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_18",
+  "end": 107.52799999999999,
+  "speaker": "B",
+  "start": 106.878,
+  "text": " Tammam,",
+  "type": "transcript.text.segment"
+ },
+ {
+  "id": "seg_19",
+  "end": 108.728,
+  "speaker": "B",
+  "start": 107.978,
+  "text": " faddal kerti.",
+  "type": "transcript.text.segment"
+ }
+]
